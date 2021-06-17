@@ -1,0 +1,34 @@
+windows:
+  - name: web
+    root: ~/web/
+    layout: 3_columns
+    panes:
+      - commands:
+        - cd ~/web/web-zola
+        - git pull
+        - bin/start run
+      - commands:
+        - cd ~/web/web-nav
+        - git pull
+        - npm ci
+        - npm run dev-start
+        - cd ~/web/web-registry
+        - git pull
+        - npm ci
+        - npm run dev-start
+        - cd ~/web/web-wedding
+        - git pull
+        - npm ci
+        - npm run dev-start
+        - cd ~/web/web-marketplace
+        - git pull
+        - npm ci
+        - npm run dev-start
+        - cd ~/web/ansible
+        - git pull
+        - sudo nginx
+      - commands:
+        - cd ~/web/zola-ui
+        - git pull
+      - commands:
+        - cd ~/web/tools/vagrant

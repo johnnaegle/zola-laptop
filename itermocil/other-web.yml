@@ -1,0 +1,13 @@
+windows:
+  - name: other-web
+    root: ~/web/
+    layout: tiled
+    panes:
+      - commands:
+          - cd ~/web/web-wedding
+          - git pull && npm i
+          - npm run dev-start
+          - cd ~/web/web-registry
+          - git pull && npm i
+          - npm run dev-start
+        name: Web Registry

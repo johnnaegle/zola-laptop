@@ -1,0 +1,15 @@
+bierner.markdown-preview-github-styles
+christian-kohler.npm-intellisense
+cmstead.jsrefactor
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+DennisOosterling.jsx-path-refactor
+dsznajder.es7-react-js-snippets
+eamodio.gitlens
+esbenp.prettier-vscode
+Gruntfuggly.todo-tree
+infeng.vscode-react-typescript
+msjsdiag.debugger-for-chrome
+shinnn.stylelint
+stringham.move-ts
+wmaurer.change-case

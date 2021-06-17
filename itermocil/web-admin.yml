@@ -1,0 +1,14 @@
+windows:
+  - name: web-admin
+    root: ~/web/tools/vagrant
+    layout: tiled
+    panes:
+      - commands:
+        - i2-badge svc-admin
+        - vagrant ssh -c 'cd /web/svc-admin && git pull && mvn clean install && cd /web/svc-admin/server && bin/service.rb run'
+      - commands:
+        - i2-badge web-admin
+        - cd ~/web/web-admin
+        - git pull
+        - bin/start run
+    

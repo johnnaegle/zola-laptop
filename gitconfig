@@ -1,0 +1,24 @@
+[core]
+	hooksPath = ~/.git-support/hooks
+	excludesfile = /Users/jnaegle/.gitignore_global
+	editor = code --wait
+[gitseekret]
+	version = 1
+	rulespath = /Users/jnaegle/.git-support/seekret-rules
+	rulesenabled = aws.secret_access_key,aws.access_key_id,aws.account_id,mandrill.password,mandrill.api_key,mandrill.username,newrelic.license_key,slack.api_token,slack.webhook_url
+	exceptionsfile = ""
+[user]
+	name = John Naegle
+	email = jnaegle@zola.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+	rebase = true
+[commit]
+	template = /Users/jnaegle/.stCommitMsg
+[merge]
+	tool = opendiff

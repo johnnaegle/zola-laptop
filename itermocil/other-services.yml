@@ -1,0 +1,17 @@
+windows:
+  - name: other-services
+    root: ~/web/tools/vagrant
+    layout: tiled
+    panes:
+      - commands:
+        - i2-badge svc-cart
+        - vagrant ssh -c 'cd /web/svc-cart && git pull && mvn clean install && cd /web/svc-cart/server && bin/service.rb run'
+        name: SVC Cart
+      - commands:
+        - i2-badge svc-order
+        - vagrant ssh -c 'cd /web/svc-order && git pull && mvn clean install && cd /web/svc-order/server && bin/service.rb run'
+        name: SVC Order
+      - commands:
+        - i2-badge svc-wedding
+        - vagrant ssh -c 'cd /web/svc-wedding && git pull && mvn clean install && cd /web/svc-wedding/server && bin/service.rb run'
+        name: SVC Wedding

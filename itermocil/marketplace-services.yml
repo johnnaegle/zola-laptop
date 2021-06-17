@@ -1,0 +1,37 @@
+windows:
+  - name: marketplace-services
+    root: ~/web/tools/vagrant
+    layout: tiled
+    panes:
+      - commands:
+          - i2-badge svc-home
+          - vagrant ssh -c 'cd /web/svc-home && mvn -Dmaven.test.skip=true clean install && cd /web/svc-home/server && bin/service.rb run'
+        name: SVC Home
+      - commands:
+          - i2-badge svc-image
+          - vagrant ssh -c 'cd /web/svc-image && mvn -Dmaven.test.skip=true clean install && cd /web/svc-image/server && bin/service.rb run'
+        name: SVC Image
+      - commands:
+          - i2-badge svc-marketplace
+          - vagrant ssh -c 'cd /web/svc-marketplace && mvn clean install -Dmaven.test.skip=true && git stash apply && ./server/bin/service.rb run'
+        name: SVC Marketplace
+      - commands:
+          - i2-badge svc-user
+          - vagrant ssh -c 'cd /web/svc-user && mvn -Dmaven.test.skip=true clean install && cd /web/svc-user/server && bin/service.rb run'
+        name: SVC User
+      - commands:
+          - i2-badge svc-web-api
+          - vagrant ssh -c 'cd /web/svc-web-api && mvn -Dmaven.test.skip=true clean install && cd /web/svc-web-api/server && bin/service.rb run'
+        name: SVC Web Api
+      - commands:
+          - i2-badge svc-backoffice
+          - vagrant ssh -c 'cd /web/svc-backoffice && mvn -Dmaven.test.skip=true clean install && cd /web/svc-backoffice/server && bin/service.rb run'
+        name: SVC Back Office
+      - commands:
+          - i2-badge marketplace-out.log
+          - tail -f /Users/jnaegle/.pm2/logs/web-marketplace-out.log
+        name: Tail marketplace log
+      - commands:
+          - i2-badge web-marketplace-error.log
+          - tail -f /Users/jnaegle/.pm2/logs/web-marketplace-error.log
+        name: Tail marketplace error log

@@ -1,0 +1,29 @@
+windows:
+  - name: other-web
+    root: ~/web/
+    layout: tiled
+    panes:
+      - commands:
+          - i2-badge web-zola
+          - cd ~/web/web-zola
+          - git pull
+          - bin/start run
+        name: Web Zola
+
+      - commands:
+          - cd ~/web/web-wedding
+          - git pull && npm i
+          - npm run dev-staging
+          - cd ~/web/web-registry
+          - git pull && npm i
+          - npm run dev-staging
+          - cd ~/web/web-nav
+          - git pull && npm i
+          - npm run dev-staging
+          - cd ~/web/web-marketplace
+          - git pull && npm i
+          - npm run dev-staging
+          - cd ~/web/web-preauth
+          - git pull && npm i
+          - npm run dev-start
+        name: All the webs

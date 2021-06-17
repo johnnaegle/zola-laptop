@@ -1,0 +1,29 @@
+windows:
+  - name: marketplace-services-no-build
+    root: ~/web/tools/vagrant
+    layout: tiled
+    panes:
+      - commands:
+        - i2-badge svc-home
+        - vagrant ssh -c 'cd /web/svc-home && cd /web/svc-home/server && bin/service.rb run'
+        name: SVC Home
+      - commands:
+        - i2-badge svc-image 
+        - vagrant ssh -c 'cd /web/svc-image && cd /web/svc-image/server && bin/service.rb run'
+        name: SVC Image
+      - commands:
+        - i2-badge svc-marketplace 
+        - vagrant ssh -c 'cd /web/svc-marketplace && cd /web/svc-marketplace/server && bin/service.rb run'
+        name: SVC Marketplace
+      - commands:
+        - i2-badge svc-user 
+        - vagrant ssh -c 'cd /web/svc-user && cd /web/svc-user/server && bin/service.rb run'
+        name: SVC User
+      - commands:
+        - i2-badge svc-web-api 
+        - vagrant ssh -c 'cd /web/svc-web-api && cd /web/svc-web-api/server && bin/service.rb run'
+        name: SVC Web Api
+      - commands:
+        - i2-badge svc-backoffice 
+        - vagrant ssh -c 'cd /web/svc-backoffice && cd /web/svc-backoffice/server && bin/service.rb run'
+        name: SVC Back Office

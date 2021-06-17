@@ -1,0 +1,21 @@
+windows:
+  - name: services-install
+    root: ~/web/tools/vagrant
+    layout: 3_columns
+    panes:
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-cart && git pull && mvn clean install && cd /web/svc-cart/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-home && git pull && mvn clean install && cd /web/svc-home/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-inspiration && git pull && mvn clean install && cd /web/svc-inspiration/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-image && git pull && mvn clean install && cd /web/svc-image/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-marketplace && git pull && mvn clean install && cd /web/svc-marketplace/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-user && git pull && mvn clean install && cd /web/svc-user/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-web-api && git pull && mvn clean install && cd /web/svc-web-api/server && bin/service.rb run'
+      - commands:
+        - vagrant ssh -c 'cd /web/svc-wedding && git pull && mvn clean install && cd /web/svc-wedding/server && bin/service.rb run'
