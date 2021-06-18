@@ -33,6 +33,8 @@ cp ./gitconfig ~/.gitconfig
 echo "Install hosts file and malware / adware blocking"
 test -d ~/hosts || ( mkdir -p ~/hosts && git clone git@github.com:StevenBlack/hosts.git ~/hosts)
 pushd ~/hosts && pip3 install --user -r requirements.txt &&  python3 updateHostsFile.py --backup --auto --replace --extensions gambling porn fakenews && popd
+sudo dscacheutil -flushcache
+sudo killall -HUP mDNSResponder
 
 echo "Screenshots Folder"
 mkdir -p ~/Documents/Screenshots

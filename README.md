@@ -26,3 +26,4 @@
 
 - Show all file extensions in finder
 
+- Turn on setting sync in vscode
