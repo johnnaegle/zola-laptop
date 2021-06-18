@@ -1,18 +1,4 @@
-# zola-laptop
-
-Notes on getting a zola-provided laptop functiona
-
 ## Setup
-
-- Follow the steps in https://github.com/NewAmsterdamLabs/tools/blob/master/laptop/README.md
-
-You should now have XCode
-
-- Install Vagrant: https://github.com/NewAmsterdamLabs/tools/blob/master/vagrant/README.md
-
-Vagrant should now be installed
-
-- Continue from step 3 here: https://github.com/NewAmsterdamLabs/tools
 
 ## Visual studio code
 
@@ -39,4 +25,4 @@ Vagrant should now be installed
 ## Other stuff
 
 - Show all file extensions in finder
-- 
+
