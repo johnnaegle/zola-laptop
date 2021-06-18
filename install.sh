@@ -10,18 +10,22 @@ else
   echo "in which case, you can ignore these errors."
 fi
 
-echo "Installing vs code extensions"
-cat vs-code-extensions.txt | xargs -n 1 code --install-extension
+# VS Code Settings Sync does this
+# echo "Installing vs code extensions"
+# cat vs-code-extensions.txt | xargs -n 1 code --install-extension
+
+echo "Installing itermocil"
+brew install TomAnthony/brews/itermocil
 
 echo "Installing itermocil configs"
-mkdir --p ~/.itermocil
+mkdir -p ~/.itermocil
 cp ./itermocil/* ~/.itermocil
 
 echo "Installing oh-my-zsh"
 test -d ~/.oh-my-zsh || ( curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh )
 
 echo "Installing oh-my-zsh extensions"
-cp -r ./oh-my-zsh ~/.oh-my-zsh
+cp -r ./oh-my-zsh/custom/* ~/.oh-my-zsh/custom/
 
 echo "Installing git config"
 cp ./gitconfig ~/.gitconfig
