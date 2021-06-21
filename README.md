@@ -1,10 +1,7 @@
 ## Setup
 
-## Visual studio code
-
-- Visual Studio Code: https://code.visualstudio.com/download
-
-## Run install.sh
+- Perform the standard zola laptop setup first, vagrant optional
+- Run install.sh
 
 ## Other software
 
@@ -25,5 +22,4 @@
 ## Other stuff
 
 - Show all file extensions in finder
-
 - Turn on setting sync in vscode
