@@ -43,4 +43,8 @@ defaults write com.apple.screencapture location ~/Documents/Screenshots
 echo "Making second marketplace folder for builds"
 test -d ~/web/marketplace-web || ( mkdir -p ~/web/marketplace-web && git clone git@github.com:NewAmsterdamLabs/web-marketplace.git ~/web/marketplace-web )
 
+echo "Setting up git-hooks"
+pushd ~/web/web-marketplace && git config --local core.hooksPath .git/hooks && popd
+pushd ~/web/marketplace-web && git config --local core.hooksPath .git/hooks && popd
+
 echo "Done - good luck"
