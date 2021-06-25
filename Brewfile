@@ -7,5 +7,6 @@ brew 'graphviz'
 brew 'telnet'
 brew 'thefuck'
 brew 'watchman'
+brew 'gist'
 
 cask 'font-fira-code'
