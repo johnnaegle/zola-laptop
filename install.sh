@@ -47,4 +47,7 @@ echo "Setting up git-hooks"
 pushd ~/web/web-marketplace && git config --local core.hooksPath .git/hooks && popd
 pushd ~/web/marketplace-web && git config --local core.hooksPath .git/hooks && popd
 
+echo "Installing npm-merge-driver"
+npx npm-merge-driver install --global
+
 echo "Done - good luck"
