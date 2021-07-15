@@ -1,0 +1,5 @@
+# These domains will be whitelisted in DNS host blocking
+app.segment.com
+cdn.segment.com
+api.segment.io
+cdn.segment.io
