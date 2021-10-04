@@ -1,4 +1,4 @@
 if [[ ($TERM_PROGRAM != "vscode")]]
 then
-  cd ~/web/web-marketplacecd 
+  cd ~/web/web-marketplace
 fi
