@@ -1,0 +1,29 @@
+# <[dark] **optional tag**> <type> <subject> (Max 50 char)
+# |<----  What is your commit doing?  ---->|
+
+# <body> (Max 72 char per line)
+# |<----   Explain the commit context: Why is this necessary? How it resolve it?   ---->|
+
+# IMPORTANT!! Describe any side effects of the change.
+
+# Provide links or keys to any relevant tickets, articles or other resources
+# Examples: "Jira issue [ABC-123]"
+
+# --- COMMIT END ---
+# Type can be 
+#   Feat     (new feature)
+#   Fix      (bug fix)
+#   Refactor (refactoring production code)
+#   Style    (formatting, missing semi colons, etc; no code change)
+#   Test     (adding or refactoring tests; no production code change)
+#   Remove   (clean up; no production code change)
+#   Update   (for dependencies)
+# --------------------
+# Remember to
+#   - Capitalize the subject line
+#   - Use the imperative mood in the subject line
+#   - Do not end the subject line with a period
+#   - Separate subject from body with a blank line
+#   - Use the body to explain what and why vs. how
+#   - Can use multiple lines with "-" for bullet points in body.
+#

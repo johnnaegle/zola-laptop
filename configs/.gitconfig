@@ -19,6 +19,6 @@
 [pull]
 	rebase = true
 [commit]
-	template = /Users/jnaegle/.stCommitMsg
+	template = /Users/jnaegle/.gitmessage
 [merge]
 	tool = opendiff
