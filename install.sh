@@ -55,4 +55,7 @@ pushd ~/web/marketplace-web && git config --local core.hooksPath .git/hooks && p
 echo "Installing npm-merge-driver"
 npx npm-merge-driver install --global
 
+echo "Installing gh extensions"
+gh extension install mislav/gh-branch
+
 echo "Done - good luck"
