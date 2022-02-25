@@ -57,5 +57,6 @@ npx npm-merge-driver install --global
 
 echo "Installing gh extensions"
 gh extension install mislav/gh-branch
+gh extension install dlvhdr/gh-prs
 
 echo "Done - good luck"

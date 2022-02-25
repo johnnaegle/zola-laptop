@@ -10,7 +10,7 @@ brew 'watchman'
 brew 'gist'
 brew 'gh'
 
-# fuzzy finde for gh extension branch
+# fuzzy finder for gh extension branch
 brew 'fzf'
 
 cask 'font-fira-code'
