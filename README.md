@@ -94,5 +94,5 @@ This list of other software has been found useful by the other
 
 These are configuration notes for actions not performed by this script that are helpful
 
-- Show all file extensions in finder
+- [Show all file extensions in finder](https://support.apple.com/guide/mac-help/show-or-hide-filename-extensions-on-mac-mchlp2304/mac)
 - [Turn on setting sync in vscode](https://code.visualstudio.com/docs/editor/settings-sync)
