@@ -90,6 +90,27 @@ This list of other software has been found useful by the other
 - [Spotify](https://www.spotify.com/us/download/other/)
 - [Sourcetree](https://www.sourcetreeapp.com/)
 
+## VS Code Extensions
+
+- [Change Case](https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case) - Quickly change the case of the current selection
+- [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint into VS Cod
+- [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Supercharge Git within VS Code
+- [JS CodeFormatter](https://marketplace.visualstudio.com/items?itemName=cmstead.js-codeformer) - A JavaScript/TypeScript refactoring and code automation tool for building better source
+- [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor) - Automated refactoring tools to smooth your development workflow
+- [jsx-path-refactor](https://marketplace.visualstudio.com/items?itemName=DennisOosterling.jsx-path-refactor) - Simple helper for changing the path/name of a given file/folder and updating all related import statements
+- [Less Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-less) - Advanced autocompletion and refactoring support for Less
+- [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) - View markdown in VSCode
+- [Bracket matching for MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx) - Provides syntax highlighting and bracket matching for MDX (JSX in Markdown) files.
+- [NPM Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) - autocompletes npm modules in import statements
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code Formatter
+
+## Chrome Extensions
+
+- [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl) - create a full page screenshot
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) - React debugging tools
+- [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) - Redux debugging tools
+- [Segment Event Tracker](https://chrome.google.com/webstore/detail/segment-event-tracker/hbanigoffkilibdakdmmlgefndpjmajl) - See when Segment events are being tracked.
+
 # Other stuff
 
 These are configuration notes for actions not performed by this script that are helpful
