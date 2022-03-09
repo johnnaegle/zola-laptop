@@ -66,6 +66,8 @@ These are extensions for the [Github command line tool](https://formulae.brew.sh
 - Run install.sh
 
 ```zsh
+git clone git@github.com:johnnaegle/zola-laptop.git
+cd zola-laptop
 install.sh
 ```
 
