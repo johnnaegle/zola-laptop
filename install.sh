@@ -27,7 +27,6 @@ test -d ~/.oh-my-zsh || ( curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/mast
 echo "Installing oh-my-zsh extensions"
 cp -r ./oh-my-zsh/custom/* ~/.oh-my-zsh/custom/
 
-
 echo "Installing git message template"
 cp ./configs/.gitmessage ~/.gitmessage
 

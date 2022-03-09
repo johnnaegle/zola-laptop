@@ -1,1 +1,1 @@
-AWS_CREDENTIAL_PROFILES_FILE=/Users/jnaegle/.aws/config
+AWS_CREDENTIAL_PROFILES_FILE=~/.aws/config

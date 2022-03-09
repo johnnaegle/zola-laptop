@@ -29,9 +29,9 @@ windows:
         name: SVC Back Office
       - commands:
           - i2-badge marketplace-out.log
-          - tail -f /Users/jnaegle/.pm2/logs/web-marketplace-out.log
+          - tail -f ~/.pm2/logs/web-marketplace-out.log
         name: Tail marketplace log
       - commands:
           - i2-badge web-marketplace-error.log
-          - tail -f /Users/jnaegle/.pm2/logs/web-marketplace-error.log
+          - tail -f ~/.pm2/logs/web-marketplace-error.log
         name: Tail marketplace error log
