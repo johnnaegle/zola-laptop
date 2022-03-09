@@ -95,4 +95,4 @@ This list of other software has been found useful by the other
 These are configuration notes for actions not performed by this script that are helpful
 
 - Show all file extensions in finder
-- Turn on setting sync in vscode
+- [Turn on setting sync in vscode](https://code.visualstudio.com/docs/editor/settings-sync)
