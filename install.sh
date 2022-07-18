@@ -15,7 +15,8 @@ fi
 # cat vs-code-extensions.txt | xargs -n 1 code --install-extension
 
 echo "Installing itermocil"
-brew install TomAnthony/brews/itermocil
+# brew install TomAnthony/brews/itermocil
+pip3 install git+https://github.com/PythonicNinja/itermocil
 
 echo "Installing itermocil configs"
 mkdir -p ~/.itermocil
