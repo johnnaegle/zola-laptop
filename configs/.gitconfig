@@ -19,3 +19,5 @@
 	template = ~/.gitmessage
 [merge]
 	tool = opendiff
+[push]
+	autoSetupRemote = true
