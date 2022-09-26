@@ -63,4 +63,7 @@ gh extension install davidraviv/gh-clean-branches
 echo "Disable mac manage"
 sudo mv /Library/Addigy/macmanage/macmanage /Library/Addigy/macmanage/macmanage.old
 
+echo "Installing npx globally"
+npm install -g npx
+
 echo "Done - good luck"

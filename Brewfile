@@ -14,3 +14,6 @@ brew 'gh'
 brew 'fzf'
 
 cask 'font-fira-code'
+
+# Circleci CLI for validating config files
+brew 'circleci'
