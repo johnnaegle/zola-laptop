@@ -9,6 +9,9 @@ brew 'thefuck'
 brew 'watchman'
 brew 'gist'
 brew 'gh'
+brew 'cmake' 
+brew 'pkg-config'
+brew 'icu4c'
 
 # fuzzy finder for gh extension branch
 brew 'fzf'

@@ -66,4 +66,8 @@ sudo mv /Library/Addigy/macmanage/macmanage /Library/Addigy/macmanage/macmanage.
 echo "Installing npx globally"
 npm install -g npx
 
+echo "Installing github-linguist"
+gem install charlock_holmes -- --with-icu-dir=/usr/local/opt/icu4c
+gem install github-linguist
+
 echo "Done - good luck"
