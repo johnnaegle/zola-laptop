@@ -45,12 +45,19 @@ echo "Screenshots Folder"
 mkdir -p ~/Documents/Screenshots
 defaults write com.apple.screencapture location ~/Documents/Screenshots
 
-echo "Making second marketplace folder for builds"
-test -d ~/web/marketplace-web || ( mkdir -p ~/web/marketplace-web && git clone git@github.com:NewAmsterdamLabs/web-marketplace.git ~/web/marketplace-web )
+WEB_REPOS=("web-marketplace" "web-nav" "web-preauth" "web-registry" "web-store" "web-wedding" "zola-helpers" "zola-ui")
+echo "Making second directories for builds"
+test -d ~/builds || (mkdir -p ~/builds)
+for dir in "${WEB_REPOS[@]}"; do
+  test -d ~/builds/$dir || ( mkdir -p ~/builds/$dir && git clone git@github.com:NewAmsterdamLabs/$dir.git ~/builds/$dir )
+done
+
 
 echo "Setting up git-hooks"
-pushd ~/web/web-marketplace && git config --local core.hooksPath .git/hooks && popd
-pushd ~/web/marketplace-web && git config --local core.hooksPath .git/hooks && popd
+for dir in "${WEB_REPOS[@]}"; do
+  pushd ~/builds/$dir && git config --local core.hooksPath .git/hooks && popd
+  pushd ~/web/$dir && git config --local core.hooksPath .git/hooks && popd
+done
 
 echo "Installing npm-merge-driver"
 npx npm-merge-driver install --global

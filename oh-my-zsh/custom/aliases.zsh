@@ -1,4 +1,12 @@
 alias wtf-ssh='killall -m ssh-agent; eval `ssh-agent` && ssh-add -K ~/.ssh/id_rsa'
 alias v='cd ~/web/tools/vagrant && vagrant'
 alias restart-web="pushd ~/web/web-marketplace && npm run dev-stop && npm run dev-staging && popd"
-alias build="cd ~/web/marketplace-web && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/77/details && cd ~/web/web-marketplace"
+alias build-helpers="cd ~/builds/zola-helpers && git pull && npm run release:patch && cd ~/web/zola-helpers"
+alias build-marketplace="cd ~/builds/web-marketplace && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/77/details && cd ~/web/web-marketplace"
+alias build-nav="cd ~/builds/web-nav && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/80/details && cd ~/web/web-nav"
+alias build-preauth="cd ~/builds/web-preauth && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/92/details && cd ~/web/web-preauth"
+alias build-registry="cd ~/builds/web-registry && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/79/details && cd ~/web/web-registry"
+alias build-store="cd ~/builds/web-store && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/91/details && cd ~/web/web-store"
+alias build-wedding="cd ~/builds/web-wedding && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && open https://awx-staging.zola.com/#/templates/workflow_job_template/75/details && cd ~/web/web-wedding"
+alias build-zui="cd ~/builds/zola-ui && git pull && npm version patch && cd ~/web/zola-ui"
+alias build="build-marketplace"
