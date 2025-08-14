@@ -77,4 +77,8 @@ echo "Installing github-linguist"
 gem install charlock_holmes -- --with-icu-dir=/usr/local/opt/icu4c
 gem install github-linguist
 
+echo "Configuring log rotate"
+mkdir -p /opt/homebrew/etc/logrotate.d
+cp ./configs/logrotate.d/* /opt/homebrew/etc/logrotate.d
+
 echo "Done - good luck"

@@ -13,6 +13,7 @@ brew 'cmake'
 brew 'pkg-config'
 brew 'icu4c'
 brew 'gnu-tar'
+brew 'logrotate'
 
 # fuzzy finder for gh extension branch
 brew 'fzf'
