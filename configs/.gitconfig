@@ -1,6 +1,6 @@
 [core]
 	hooksPath = ~/.git-support/hooks
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/jnaegle/.gitignore_global
 	editor = code --wait
 [gitseekret]
 	version = 1
@@ -21,5 +21,8 @@
 	tool = opendiff
 [push]
 	autoSetupRemote = true
+[user]
+	name = John Naegle
+	email = jnaegle@zola.com
 [rebase]
-  autoStash = true
+	autoStash = true

@@ -1,5 +1,5 @@
 windows:
-  - name: other-web
+  - name: web-staging
     root: ~/web/
     layout: tiled
     panes:
@@ -9,21 +9,26 @@ windows:
           - git pull
           - bin/start run
         name: Web Zola
-
       - commands:
           - cd ~/web/web-wedding
-          - git pull && npm i
+          - git pull && npm install
           - npm run dev-staging
           - cd ~/web/web-registry
-          - git pull && npm i
+          - git pull && npm install
           - npm run dev-staging
           - cd ~/web/web-nav
-          - git pull && npm i
+          - git pull && npm install
           - npm run dev-staging
           - cd ~/web/web-marketplace
-          - git pull && npm i
+          - git pull && npm install
           - npm run dev-staging
           - cd ~/web/web-preauth
-          - git pull && npm i
+          - git pull && npm install
           - npm run dev-start
+          - cd ~/web/web-baby
+          - git pull && npm install
+          - npm run dev-staging
+          - cd ~/web/web-store
+          - git pull && npm install
+          - npm run dev-staging
         name: All the webs

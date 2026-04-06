@@ -32,7 +32,8 @@ echo "Installing git message template"
 cp ./configs/.gitmessage ~/.gitmessage
 
 echo "Installing git config"
-cp ./configs/.gitconfig ~/.gitconfig
+cp ./configs/.gitconfig ~/
+cp ./configs/.gitignore_global ~/
 
 echo "Install hosts file and malware / adware blocking"
 test -d ~/hosts || ( mkdir -p ~/hosts && git clone git@github.com:StevenBlack/hosts.git ~/hosts)
@@ -45,19 +46,13 @@ echo "Screenshots Folder"
 mkdir -p ~/Documents/Screenshots
 defaults write com.apple.screencapture location ~/Documents/Screenshots
 
-WEB_REPOS=("web-marketplace" "web-nav" "web-preauth" "web-registry" "web-store" "web-wedding" "zola-helpers" "zola-ui")
+WEB_REPOS=("component-public-registry" "component-shopping" "web-baby" "web-marketplace" "web-nav" "web-preauth" "web-registry" "web-store" "web-wedding" "zola-helpers" "zola-ui")
 echo "Making second directories for builds"
 test -d ~/builds || (mkdir -p ~/builds)
 for dir in "${WEB_REPOS[@]}"; do
   test -d ~/builds/$dir || ( mkdir -p ~/builds/$dir && git clone git@github.com:NewAmsterdamLabs/$dir.git ~/builds/$dir )
 done
 
-
-echo "Setting up git-hooks"
-for dir in "${WEB_REPOS[@]}"; do
-  pushd ~/builds/$dir && git config --local core.hooksPath .git/hooks && popd
-  pushd ~/web/$dir && git config --local core.hooksPath .git/hooks && popd
-done
 
 echo "Installing npm-merge-driver"
 npx npm-merge-driver install --global
