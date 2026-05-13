@@ -1,6 +1,7 @@
 alias v='cd ~/web/tools/m1 && vagrant'
 alias build-baby='(cd ~/builds/web-baby && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-baby'
-alias build-helpers='(cd ~/builds/zola-helpers && git pull && npm run release:patch && say "build done") || say "build failed"; cd ~/web/zola-helpers'
+alias build-client-helpers='(cd ~/builds/web-client-helpers && git pull && npm run release:patch && say "build done") || say "build failed"; cd ~/web/web-client-helpers'
+alias build-server-helpers='(cd ~/builds/web-server-helpers && git pull && npm run release:patch && say "build done") || say "build failed"; cd ~/web/server-helpers'
 alias build-marketplace='(cd ~/builds/web-marketplace && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-marketplace'
 alias build-nav='(cd ~/builds/web-nav && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-nav'
 alias build-preauth='(cd ~/builds/web-preauth && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-preauth'

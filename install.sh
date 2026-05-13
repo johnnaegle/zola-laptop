@@ -10,13 +10,8 @@ else
   echo "in which case, you can ignore these errors."
 fi
 
-# VS Code Settings Sync does this
-# echo "Installing vs code extensions"
-# cat vs-code-extensions.txt | xargs -n 1 code --install-extension
-
 echo "Installing itermocil"
-# brew install TomAnthony/brews/itermocil
-pip3 install git+https://github.com/PythonicNinja/itermocil
+brew install TomAnthony/brews/itermocil
 
 echo "Installing itermocil configs"
 mkdir -p ~/.itermocil
@@ -46,7 +41,7 @@ echo "Screenshots Folder"
 mkdir -p ~/Documents/Screenshots
 defaults write com.apple.screencapture location ~/Documents/Screenshots
 
-WEB_REPOS=("component-public-registry" "component-shopping" "web-baby" "web-marketplace" "web-nav" "web-preauth" "web-registry" "web-store" "web-wedding" "zola-helpers" "zola-ui")
+WEB_REPOS=("component-public-registry" "component-shopping" "web-baby" "web-marketplace" "web-nav" "web-preauth" "web-registry" "web-store" "web-wedding" "web-client-helpers" "web-server-helpers" "zola-ui")
 echo "Making second directories for builds"
 test -d ~/builds || (mkdir -p ~/builds)
 for dir in "${WEB_REPOS[@]}"; do
@@ -71,9 +66,5 @@ npm install -g npx
 echo "Installing github-linguist"
 gem install charlock_holmes -- --with-icu-dir=/usr/local/opt/icu4c
 gem install github-linguist
-
-echo "Configuring log rotate"
-mkdir -p /opt/homebrew/etc/logrotate.d
-cp ./configs/logrotate.d/* /opt/homebrew/etc/logrotate.d
 
 echo "Done - good luck"
