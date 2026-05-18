@@ -12,10 +12,12 @@ brew 'pkg-config'
 brew 'icu4c'
 brew 'gnu-tar'
 brew 'logrotate'
-brew 'font-fira-code'
+cask 'font-fira-code'
 
 # fuzzy finder for gh extension branch
 brew 'fzf'
+
+brew 'PeonPing/tap/peon-ping'
 
 # Circleci CLI for validating config files
 # brew 'circleci'
