@@ -58,7 +58,7 @@ gh extension install dlvhdr/gh-prs
 gh extension install davidraviv/gh-clean-branches
 
 echo "Disable mac manage"
-sudo mv /Library/Addigy/macmanage/macmanage /Library/Addigy/macmanage/macmanage.old
+sudo mv /Library/Addigy/macmanage /Library/Addigy/macmanage.old
 
 echo "Installing npx globally"
 npm install -g npx
@@ -66,5 +66,8 @@ npm install -g npx
 echo "Installing github-linguist"
 gem install charlock_holmes -- --with-icu-dir=/usr/local/opt/icu4c
 gem install github-linguist
+
+echo "Configuring PeonPing"
+peon-ping-setup
 
 echo "Done - good luck"
