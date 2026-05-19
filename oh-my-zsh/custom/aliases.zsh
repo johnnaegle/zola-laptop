@@ -8,4 +8,4 @@ alias build-preauth='(cd ~/builds/web-preauth && git pull && npm version patch &
 alias build-registry='(cd ~/builds/web-registry && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-registry'
 alias build-store='(cd ~/builds/web-store && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-store'
 alias build-wedding='(cd ~/builds/web-wedding && git pull && npm version patch && ~/web/tools/scripts/bump-staging-version.rb && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/web-wedding'
-alias build-zui='(cd ~/builds/zola-ui && git pull && npm version patch && npm run deploy:staging && say "build done") || say "build failed"; cd ~/web/zola-ui'
+alias build-zui='(cd ~/builds/zola-ui && git pull && npm version patch &&  say "build done") || say "build failed"; cd ~/web/zola-ui'
